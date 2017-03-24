@@ -1,0 +1,72 @@
+{
+  "private": true,
+  "entry": {
+    "index": "./src/index.js"
+  },
+  "name": "vehicle-mfe",
+  "version": "0.0.1",
+  "description": "vehicle management front-end",
+  "scripts": {
+    "start": "dora --plugins \"proxy,webpack,webpack-hmr\"",
+    "dev": "dora --plugins \"webpack,webpack-hmr\"",
+    "lint": "eslint --fix --ext .js,.jsx src/",
+    "build": "atool-build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xdsselab/vehicle-mfe.git"
+  },
+  "keywords": [
+    "antd",
+    "es6",
+    "less"
+  ],
+  "author": "muxfe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xdsselab/vehicle-mfe/issues"
+  },
+  "homepage": "https://github.com/xdsselab/vehicle-mfe#readme",
+  "dependencies": {
+    "antd": "^2.8.2",
+    "atool-build": "^0.9.3",
+    "babel-eslint": "^7.2.0",
+    "babel-plugin-dev-expression": "^0.2.1",
+    "babel-plugin-dva-hmr": "^0.3.2",
+    "babel-plugin-import": "^1.1.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-runtime": "^6.23.0",
+    "classnames": "^2.2.5",
+    "dora": "^0.4.3",
+    "dora-plugin-proxy": "^0.8.5",
+    "dora-plugin-webpack": "^0.8.1",
+    "dora-plugin-webpack-hmr": "^0.2.1",
+    "dva": "^1.2.1",
+    "dva-loading": "^0.2.0",
+    "eslint": "^3.18.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "glob": "^7.1.1",
+    "js-cookie": "^2.1.3",
+    "mockjs": "^1.0.1-beta3",
+    "qs": "^6.4.0",
+    "react": "^15.4.2",
+    "react-countup": "^2.0.3",
+    "react-dom": "^15.4.2",
+    "recharts": "^0.21.2",
+    "redbox-react": "^1.3.4",
+    "robe-ajax": "^1.0.1",
+    "watchjs": "^0.0.0"
+  },
+  "theme": "./src/theme.js",
+  "standard": {
+    "parser": "babel-eslint",
+    "globals": [
+      "location",
+      "localStorage"
+    ]
+  }
+}
